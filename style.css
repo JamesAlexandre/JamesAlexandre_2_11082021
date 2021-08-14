@@ -118,7 +118,6 @@ form {
     padding: 10px;
     border: 3px solid #F2F2F2;
     display: flex;
-    width: max-content;
     border-radius: 50px;
     align-items: center;
     margin-left: 30px;
@@ -166,13 +165,86 @@ form {
 }
 
 /* *************** HOTELS ************ */
+
+/* ************* PREMIER BLOC ************* */
 .hotels {
     display: flex;
     justify-content: space-between;
+    
 }
 
-.hotels img {
-    width: 100px;
-    height: 100px;
+.premier_bloc a {
+    /* display: block; */
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 15px;
 }
 
+.premier_bloc img {
+    width: 235px;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.premier_bloc {
+    background-color: #F2F2F2;
+    width: 60%;
+    border-radius: 15px;
+    
+}
+
+.logements_premier_bloc {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.liste_top, .liste_bot {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+/* ************** ASIDE ************* */
+aside a {
+    text-decoration: none;
+    color: black;
+}
+
+aside img {
+    object-fit: cover;
+    height: 140px;
+    width: 125px;
+}
+
+aside {
+    background-color: #F2F2F2;
+    width: 30%;
+    border-radius: 15px;
+
+}
+
+
+.titre_aside {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.logements_aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+}
+
+aside a {
+    display: flex;
+    
+}
+
+.info_hotels {
+    display: flex;
+    flex-direction: column;
+}
