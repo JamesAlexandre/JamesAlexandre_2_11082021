@@ -10,6 +10,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 30px;
+    overflow-x: hidden;
 }
 
 li {
@@ -83,6 +84,8 @@ form {
     border-left: none;
     outline: none; 
     border: rgba(0, 0, 0, 0.192) 1px solid;
+    font-weight: bold;
+    padding-left: 10px;
     
 }
 
@@ -98,6 +101,78 @@ form {
     cursor: pointer;
 }
 
-input {
-    border: black 1px solid;
+/* *************** FILTRES ************** */
+
+.filtres {
+    display: flex;
+    align-items: baseline;
+    font-weight: bold;
 }
+
+
+.filtres ul {
+    display: flex;
+}
+
+.filtres li {
+    padding: 10px;
+    border: 3px solid #F2F2F2;
+    display: flex;
+    width: max-content;
+    border-radius: 50px;
+    align-items: center;
+    margin-left: 30px;
+    padding:0;
+    padding-right: 15px;
+    
+}
+
+.filtres li:hover {
+    cursor: pointer;
+    background-color: #0065FC;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+
+.filtres i {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 10px;
+    margin-right: 20px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+      
+}
+
+.nombre_logements {
+    display: flex;
+    align-items: baseline;
+}
+
+.nombre_logements i {
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    font-size: 13px ;
+    text-align: center;
+    margin: 10px;
+    color: #0065FC;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    border-radius: 100%;
+}
+
+/* *************** HOTELS ************ */
+.hotels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotels img {
+    width: 100px;
+    height: 100px;
+}
+
