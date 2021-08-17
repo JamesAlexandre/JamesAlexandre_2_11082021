@@ -10,6 +10,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 30px;
+    
 }
 
 li {
@@ -27,12 +28,16 @@ header img {
     height: 50px;
 }
 
+nav {
+    display: flex;
+}
+
 nav ul {
     display: flex;
     margin-right: 50px;
 }
 
-nav li a {
+nav a {
     text-decoration: none;
     color: black;
     margin: 20px;
@@ -106,7 +111,8 @@ form {
 .filtres {
     display: flex;
     align-items: baseline;
-    font-weight: bold;
+    font-weight: bold; 
+    width: 100%;
 }
 
 .filtres p {
@@ -115,6 +121,9 @@ form {
 
 .filtres ul {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
 }
 
 .filtres li {
@@ -186,6 +195,10 @@ form {
 .premier_bloc h2, .premier_bloc p:last-child {
     margin-left: 25px;
     font-weight: bold;
+}
+
+.premier_bloc p:last-child:hover {
+    cursor: pointer;
 }
 
 .premier_bloc a {
@@ -350,7 +363,6 @@ aside h3, aside p {
 .petite_activité {
     border-radius: 15px;
     box-shadow: 5px 5px 5px 2px rgba(0,0,0,0.13);
-
 }
 
 /* *********** FOOTER ********** */
@@ -375,4 +387,75 @@ footer h3 {
 }
 footer li {
     padding: 5px;
+}
+
+@media screen and (max-width:1300px) {
+
+    body {
+        width: auto;
+    }
+    .hotels {
+        flex-direction: column-reverse;
+    }
+
+    /* ************ POPULAIRE ********* */
+    aside {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    .titre_aside {
+        justify-content: space-between;
+    }
+    aside h2 {
+        padding-left: 50px;
+    }
+
+    .titre_aside i{
+        padding-right: 50px;
+    }
+    .logements_aside {
+    width: 80%;
+    margin: auto;
+    }   
+
+    aside a {
+        margin: 20px;
+    }
+    /* ************ HEBERGEMENTS ********* */
+    .premier_bloc {
+        width: 100%;
+    }
+
+    /* ********* ACTIVITÉS ******** */
+    .liste_activités {
+        display: block;
+    }
+
+    .activités img {
+        width: 100%;
+        object-fit: cover;
+    }
+    .activités a {
+        display: block;
+        margin: 20px;
+    }
+    .grande_activité {
+        padding-bottom: 5px;
+    }
+
+    .petite_activité {
+        height: max-content;
+    }
+
+    .petite_img {
+        height: 380px;
+    }
+}   
+    
+@media screen and (max-device-width: 980px) {
+    nav ul {
+     
+    }
 }
