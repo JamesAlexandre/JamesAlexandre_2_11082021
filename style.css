@@ -17,11 +17,19 @@ li {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /* ************ HEADER *********** */
 
 header {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    margin-top: -30px;
+    
 }
 
 header img {
@@ -30,16 +38,15 @@ header img {
 
 nav {
     display: flex;
+    align-items: baseline;
 }
 
 nav ul {
     display: flex;
-    margin-right: 50px;
+
 }
 
 nav a {
-    text-decoration: none;
-    color: black;
     margin: 20px;
     padding: 15px;
 }
@@ -47,7 +54,7 @@ nav a {
 nav li a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 44px;
+    padding-top: 30px;
 
 }
 
@@ -66,7 +73,7 @@ h1 {
 
 form {
     display: flex;
-    align-items: baseline;
+    
 }
 
 .localisation_logo {
@@ -203,8 +210,6 @@ form {
 
 .premier_bloc a {
     display: block;
-    text-decoration: none;
-    color: black;
     background-color: white;
     border-radius: 15px;
     padding: 5px;
@@ -276,8 +281,6 @@ aside {
 }
 
 aside a {
-    text-decoration: none;
-    color: black;
     display: flex;
     background-color: white;
     border-radius: 15px;
@@ -286,6 +289,7 @@ aside a {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    
 }
 
 aside a:hover {
@@ -314,10 +318,6 @@ aside h3, aside p {
 }
 
 /* *********** ACTIVITES ********* */
-.activités a{
-    text-decoration: none;
-    color: black;
-}
 
 .activités img {
     width: 305px;
@@ -344,7 +344,7 @@ aside h3, aside p {
 }
 
 .petite_img {
-    height: 130px;
+    height: 150px;
     border-radius: 15px 15px 0 0 ;
 }
 
@@ -374,11 +374,6 @@ footer {
     margin: 50px -30px -30px -30px;
 }
 
-footer a {
-    text-decoration: none;
-    color: black;
-}
-
 footer a:hover {
     text-decoration: underline black;
 }
@@ -388,6 +383,9 @@ footer h3 {
 footer li {
     padding: 5px;
 }
+
+/* *********** MEDIA QUERIES *********** */
+
 
 @media screen and (max-width:1300px) {
 
@@ -453,9 +451,97 @@ footer li {
         height: 380px;
     }
 }   
+
+@media screen and (max-width:640px) {
     
-@media screen and (max-device-width: 980px) {
+    html { margin: none;
+        
+    }
+
+    
+
+    /* HEADER */
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: flex-end;
+    }
+
+    header img {
+        position: absolute;
+    }
+
     nav ul {
-     
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    nav ul a {
+        font-size: 19px;
+        width: 50%;
+    }
+
+        /* FILTRES  */
+
+    .filtres {
+            display: block;
+        }
+
+        /* POPULAIRE */
+
+    aside {
+        border-radius: 0;
+        width: auto;
+        margin: 0 auto;
+        
+    }
+    aside a {
+        width: 350px;
+        height: 140px;
+        max-width: 100%;
+    }
+
+    aside img {
+        height: auto;
+    }
+
+
+        /* HEBERGEMENTS */
+    .premier_bloc h2 {
+        font-size: 21px;
+        margin-left: auto;
+        
+    }
+    .premier_bloc {
+      background: none;
+        
+    }
+    .premier_bloc a {
+        width: 100%;
+        margin: 20px;
+        
+    }
+    .liste_top, .liste_bot {
+        display: block;
+        width: 100%;
+        margin: -20px;
+        
+    }
+
+        /* ACTIVITÉS */
+    .activités img {
+        height: 133px;
+    }
+    .activités a {
+        height: auto;
+        margin: 10px;
+    }
+
+        /* FOOTER  */
+    footer {
+        display: block;
+        padding: 50px;
     }
 }
