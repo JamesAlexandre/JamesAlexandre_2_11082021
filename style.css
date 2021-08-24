@@ -10,10 +10,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    padding: 0;
-    /* overflow-x: hidden; */
-
-    
+    padding: 0;  
 }
 
 li {
@@ -30,8 +27,7 @@ a {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    
+    align-items: baseline;  
 }
 
 header img {
@@ -46,7 +42,6 @@ nav {
 
 nav ul {
     display: flex;
-
 }
 
 nav a {
@@ -58,7 +53,6 @@ nav li a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 30px;
-
 }
 
 #inscrire {
@@ -91,7 +85,6 @@ form {
     border: 1px solid rgba(208, 214, 208, 0.253);
     border-right: none;
     text-align: center;
-    
 }
 
 #search {
@@ -133,9 +126,7 @@ button {
 
 .filtres ul {
     display: flex;
-    flex-wrap: wrap;
-
-    
+    flex-wrap: wrap; 
 }
 
 .filtres li {
@@ -164,8 +155,7 @@ button {
     padding-top: 10px;
     margin-right: 20px;
     background-color: #DEEBFF;
-    color: #0065FC;
-      
+    color: #0065FC;  
 }
 
 .nombre_logements {
@@ -192,7 +182,6 @@ button {
     display: flex;
     justify-content: space-between;
     margin: 20px;
-    
 }
 
 
@@ -200,8 +189,7 @@ button {
     background-color: #F2F2F2;
     width: 65%;
     border-radius: 15px; 
-    padding: 15px;
-    
+    padding: 15px; 
 }
 
 .premier_bloc h2, .premier_bloc p:last-child {
@@ -250,7 +238,6 @@ button {
 .logements_premier_bloc {
     display: flex;
     flex-direction: column;
-    
 }
 
 .liste_top, .liste_bot {
@@ -266,14 +253,12 @@ aside {
     width: 30%;
     border-radius: 15px;
     padding-top: 15px;
-
 }
 
 .titre_aside {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-    
 }
 
 .logements_aside {
@@ -282,7 +267,6 @@ aside {
     justify-content: space-around;
     height: 85%;
     width: 100%;
-   
 }
 
 aside a {
@@ -293,9 +277,7 @@ aside a {
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
-    
-    
+    width: 80%; 
 }
 
 aside a:hover {
@@ -313,8 +295,8 @@ aside img {
 aside h3, aside p {
     margin: 10px 0 0 15px;
 }
-.etoiles_aside  {
 
+.etoiles_aside  {
     margin: 30px 0 0 15px;
     color: #0065FC;
 }
@@ -398,9 +380,6 @@ footer li {
 
 @media screen and (max-width:1300px) {
 
-    body {
-        width: auto;
-    }
     .hotels {
         flex-direction: column-reverse;
     }
@@ -419,16 +398,18 @@ footer li {
         padding-left: 50px;
     }
 
-    .titre_aside i{
+    .titre_aside i {
         padding-right: 50px;
     }
+
     .logements_aside {
-    margin: auto;
+        margin: auto;
     }   
 
     aside a {
         margin-top: 20px;
     }
+
     /* ************ HEBERGEMENTS ********* */
     .premier_bloc {
         width: 100%;
@@ -481,7 +462,6 @@ footer li {
         width: 100%;
         padding-inline-start: 0;
         text-align: center;
-
     }
 
     nav li {
@@ -492,62 +472,60 @@ footer li {
     }
     nav ul a {
         font-size: 16px; 
-        
-
     }
+
     nav li:hover {
         border-bottom: #0065FC 3px solid;
     }
-    nav li a:hover{
-        border-top: none;
-        
-    }
 
-    
+    nav li a:hover{
+        border-top: none;   
+    }
 
         /* RECHERCHE */
         
-        h1{
-            font-size: 20px;
-        }
-        form {
-            margin-left: 15px;
-        }
-        .localisation_logo {
-            height: 45px;
-            width: 45px;
-            padding: 10px;
-        }
-        #search {
-            width: 220px;
-            height: 45px;
-        }
-        #bouton {
-            display: none;
-        }
+    h1{
+        font-size: 20px;
+    }
+    form {
+        margin-left: 15px;
+    }
+    .localisation_logo {
+        height: 45px;
+        width: 45px;
+        padding: 10px;
+    }
+    #search {
+        width: 220px;
+        height: 45px;
+    }
+    #bouton {
+        display: none;
+    }
         
-        button {
-            display: block;
-            border: none;
-            border-radius: 12px;
-            background-color: #0065FC;
-            color: white;
-            font-size: 16px;
-            padding:0 15px 0 15px;
-            text-align: center;
-            position: relative;
-            right: 10px;
-        }
+    button {
+        display: block;
+        border: none;
+        border-radius: 12px;
+        background-color: #0065FC;
+        color: white;
+        font-size: 16px;
+        padding:0 15px 0 15px;
+        text-align: center;
+        position: relative;
+        right: 10px;
+    }
         /* FILTRES  */
 
     .filtres {
             display: block;
-        }
+    }
 
     .nombre_logements i {
         width: 25px;
     }
         /* HOTELS */
+
     .hotels {
         margin: 0;
     }
@@ -556,13 +534,11 @@ footer li {
     aside {
         border-radius: 0;
         width: 100%;
-        margin: 0 auto;
-        
+        margin: 0 auto;  
     }
     aside a {
         width: 90%;
-        height: 140px;
-        
+        height: 140px;   
     }
 
     aside img {
@@ -571,25 +547,25 @@ footer li {
 
 
         /* HEBERGEMENTS */
+
     .premier_bloc h2 {
         font-size: 21px;
-        margin-left: auto;
-        
+        margin-left: auto;   
     }
+
     .premier_bloc {
-      background: none;
-        
+      background: none;  
     }
+
     .premier_bloc a {
         width: 100%;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px;    
     }
+
     .liste_top, .liste_bot {
         display: block;
         width: 100%;
-        margin-bottom: -20px;
-        
+        margin-bottom: -20px;    
     }
 
         /* ACTIVITÉS */
@@ -598,15 +574,18 @@ footer li {
         margin-left: 15px;
         font-size: 21px;
     }
+
     .activités img {
         height: 133px;
     }
+
     .activités a {
         height: auto;
         margin: 10px;
     }
 
         /* FOOTER  */
+        
     footer {
         display: block;
         padding: 50px;
