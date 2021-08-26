@@ -381,6 +381,12 @@ footer li {
 
 @media screen and (max-width:1300px) {
 
+    /* ********* FILTRES*********  */
+
+    .filtres li {
+        margin: 5px;
+    }
+
     .hotels {
         flex-direction: column-reverse;
     }
